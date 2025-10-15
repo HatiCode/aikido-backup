@@ -2,7 +2,7 @@
 
 BINARY=app
 
-build: fmt vet test
+build: fmt vet test clean
 	@echo "Building..."
 	@go build -o $(BINARY)
 	@echo "Build complete: ./$(BINARY)"
